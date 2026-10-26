@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>《山居秋暝》範文導讀｜漢華中學中國語文科</title>
+<style>
+
+:root{
+  --blue:#2563eb;--blue-dark:#1d4ed8;--blue-soft:#eff6ff;--blue-mid:#dbeafe;
+  --ink:#1f2937;--muted:#4b5563;--line:#e5e7eb;--card:#fff;--bg:#f4f6fb;
+  --ok:#16a34a;--ok-bg:#dcfce7;--bad:#dc2626;--bad-bg:#fee2e2;--warn:#b45309;--warn-bg:#fef3c7;
+  --radius:14px;--shadow:0 1px 4px rgba(0,0,0,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Noto Sans TC","PingFang TC","PingFang HK","Microsoft JhengHei","Noto Sans CJK TC",sans-serif;background:var(--bg);color:var(--ink);font-size:17px;line-height:1.65}
+a{color:var(--blue)}
+.skip{position:absolute;left:-9999px}.skip:focus{left:8px;top:8px;background:#fff;padding:8px 12px;z-index:100;border-radius:8px}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);box-shadow:0 1px 0 rgba(37,99,235,.06)}
+.topbar-inner{max-width:880px;margin:0 auto;padding:10px 14px 8px}
+.brand{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;margin-bottom:6px}
+.brand .school{font-size:.85rem;color:var(--blue);font-weight:700;letter-spacing:.02em}
+.brand h1{margin:0;font-size:1.15rem;font-weight:800}
+.nav{display:flex;flex-wrap:wrap;gap:6px}
+.nav a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:6px 12px;border-radius:999px;background:var(--blue-soft);color:var(--blue-dark);text-decoration:none;font-weight:700;font-size:.92rem;border:1px solid transparent}
+.nav a:hover,.nav a:focus{background:var(--blue);color:#fff;outline:none}
+main{max-width:880px;margin:0 auto;padding:16px 14px 80px}
+.sec{margin:22px 0 28px;scroll-margin-top:110px}
+.sec>h2{margin:0 0 12px;font-size:1.35rem;color:var(--blue-dark);padding-bottom:6px;border-bottom:3px solid var(--blue-mid)}
+.sec>h3,.card h3{margin:16px 0 8px;font-size:1.08rem}
+.card{background:var(--card);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow);margin:10px 0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+@media(max-width:700px){.grid2,.grid3{grid-template-columns:1fr}}
+.pill{display:inline-block;background:var(--blue-soft);color:var(--blue-dark);border-radius:999px;padding:2px 10px;font-size:.85rem;font-weight:700;margin-right:4px}
+.muted{color:var(--muted);font-size:.95rem}
+.person{border-left:4px solid var(--blue);padding-left:12px;margin:10px 0}
+.story{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:#fafbff}
+.story h4{margin:0 0 8px;color:var(--blue-dark)}
+.story dl{margin:0;display:grid;grid-template-columns:4.5em 1fr;gap:4px 8px}
+.story dt{font-weight:700;color:var(--muted)}.story dd{margin:0}
+.story .baihua{margin:10px 0 0;padding:10px 12px;background:#f0fdf4;border-left:4px solid #16a34a;border-radius:0 10px 10px 0;font-size:.95rem;line-height:1.65;color:#14532d}
+.story .baihua strong{color:#166534}
+.vocab{display:grid;gap:8px}
+.vocab-item{display:grid;grid-template-columns:minmax(7em,auto) 1fr;gap:8px 12px;padding:10px 12px;background:#fafbff;border-radius:10px;border:1px solid var(--line)}
+.vocab-item b{color:var(--blue-dark)}
+@media(max-width:560px){.vocab-item{grid-template-columns:1fr}}
+.struct ul{margin:6px 0;padding-left:1.2em}.struct li{margin:4px 0}
+.student-form{display:grid;grid-template-columns:1fr 1fr 1.4fr;gap:10px}
+@media(max-width:640px){.student-form{grid-template-columns:1fr}}
+label.field{display:block;font-weight:700;font-size:.92rem;margin-bottom:4px}
+input.field,select.field{width:100%;min-height:48px;padding:10px 12px;font:inherit;border:2px solid #d1d5db;border-radius:10px;background:#fff}
+input.field:focus,select.field:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(37,99,235,.2)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.tabs button{flex:1;min-width:120px;min-height:48px;font:inherit;font-weight:700;border:2px solid var(--blue);border-radius:12px;background:#fff;color:var(--blue);cursor:pointer}
+.tabs button.active,.tabs button[aria-selected="true"]{background:var(--blue);color:#fff}
+.prog-row{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:.95rem;color:var(--muted);margin:8px 0 4px}
+.bar{height:10px;background:#e5e7eb;border-radius:6px;overflow:hidden}
+.bar>div{height:100%;background:var(--blue);width:0;transition:width .3s}
+.overall{background:var(--blue-soft);border:1px solid var(--blue-mid);border-radius:12px;padding:12px 14px;margin:12px 0}
+.opt{display:flex;align-items:flex-start;gap:10px;min-height:56px;padding:12px;margin:8px 0;border:2px solid #d1d5db;border-radius:12px;background:#fff;cursor:pointer;text-align:left}
+.opt input{width:22px;height:22px;margin-top:3px;flex:none}
+.opt.sel{border-color:var(--blue);background:var(--blue-soft)}
+.opt.ok{border-color:var(--ok);background:var(--ok-bg)}
+.opt.bad{border-color:var(--bad);background:var(--bad-bg)}
+.stem{font-size:1.08rem;font-weight:700;margin:0 0 10px}
+.fb{margin-top:12px;padding:12px;border-radius:10px}
+.fb.ok{background:var(--ok-bg)}.fb.bad{background:var(--bad-bg)}
+.btn{font:inherit;font-weight:700;min-height:52px;width:100%;margin-top:12px;border:0;border-radius:12px;background:var(--blue);color:#fff;cursor:pointer}
+.btn:disabled{background:#9ca3af;cursor:not-allowed}
+.btn.sec{background:#fff;color:var(--blue);border:2px solid var(--blue)}
+.btn.ok{background:var(--ok)}
+.btn.warn{background:#d97706}
+.btn-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:500px){.btn-row{grid-template-columns:1fr}}
+.big{font-size:1.8rem;font-weight:800;text-align:center;margin:8px 0}
+.rv{border-top:1px solid var(--line);padding:10px 0}.rv .t{font-weight:700}.c{color:#15803d}.w{color:#b91c1c}
+.note{background:var(--warn-bg);border-left:4px solid var(--warn);padding:10px 12px;border-radius:0 10px 10px 0;margin:10px 0;font-size:.95rem}
+.video-box{aspect-ratio:16/9;background:linear-gradient(135deg,#dbeafe,#eff6ff);border:2px dashed #93c5fd;border-radius:14px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;padding:20px;text-align:center;color:var(--muted)}
+.video-box iframe{width:100%;height:100%;border:0;border-radius:12px}
+.video-wrap{position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:#000}
+.footer{max-width:880px;margin:0 auto;padding:8px 14px 28px;color:var(--muted);font-size:.88rem;text-align:center}
+[hidden]{display:none!important}
+@media print{
+  .topbar{position:static;box-shadow:none}
+  .nav,.btn,#quizPanel .btn,.student-form,input,select,.tabs{display:none!important}
+  body{background:#fff;font-size:14px}
+  .card,.story,.vocab-item{box-shadow:none;border:1px solid #ccc}
+  .sec{break-inside:avoid}
+}
+.classic{font-size:1.05rem;line-height:2;letter-spacing:.02em}
+.classic p{margin:0 0 1em}
+.classic h3{margin:18px 0 10px;font-size:1.1rem;color:var(--blue-dark);border-left:4px solid var(--blue);padding-left:10px}
+.classic .attr{margin-top:12px;padding-top:10px;border-top:1px dashed var(--line);font-size:.9rem;color:var(--muted);line-height:1.55}
+.classic .poem-line{font-size:1.2rem;font-weight:600;letter-spacing:.08em;text-align:center;margin:0.35em 0}
+.classic .poem-title{text-align:center;font-size:1.25rem;font-weight:800;margin:0 0 4px;color:var(--blue-dark)}
+.classic .poem-author{text-align:center;margin:0 0 16px;color:var(--muted);font-size:.95rem}
+.yuyi{line-height:1.85}
+.yuyi p{margin:0 0 .95em}
+.yuyi h3{margin:18px 0 10px;font-size:1.1rem;color:var(--blue-dark);border-left:4px solid var(--blue);padding-left:10px}
+.sec-head-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;margin:0 0 12px;padding-bottom:6px;border-bottom:3px solid var(--blue-mid)}
+.sec-head-row h2{margin:0;padding:0;border:0;font-size:1.35rem;color:var(--blue-dark)}
+.btn-toggle{font:inherit;font-weight:700;font-size:.88rem;min-height:40px;padding:6px 14px;border-radius:999px;border:2px solid var(--blue);background:#fff;color:var(--blue);cursor:pointer;width:auto;margin:0}
+.btn-toggle:hover,.btn-toggle:focus{background:var(--blue);color:#fff;outline:none}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#main">跳至正文</a>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <span class="school">漢華中學中國語文科</span>
+      <h1>《山居秋暝》範文導讀</h1>
+    </div>
+    <nav class="nav" aria-label="章節導航">
+      <a href="#daodu">導讀</a>
+      <a href="#quanwen">全文</a>
+      <a href="#yuyi">語譯</a>
+      <a href="#zici">重點字詞</a>
+      <a href="#zhangfa">章法／寫作手法</a>
+      <a href="#zice">自測</a>
+      <a href="#shipin">影片</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ========== 1 導讀 ========== -->
+<section class="sec" id="daodu">
+  <h2>一、導讀</h2>
+  <p class="muted">對象：中四至中六　｜　篇章：《山居秋暝》　｜　作者：王維（唐）　｜　用途：學生自學＋課堂投影</p>
+
+  <div class="card">
+    <h3>背景</h3>
+    <p>這首詩是王維居於<strong>輞川</strong>時所寫。「山居」就是他所住的輞川別墅；王維晚年在此過着半官半隱的生活。詩中描寫<strong>秋天傍晚雨後</strong>山村的秀美景色，亦描繪出詩人居於山中的恬淡生活，寄託對隱逸的嚮往。</p>
+  </div>
+
+  <div class="card">
+    <h3>作者簡介</h3>
+    <div class="person"><span class="pill">作者</span><strong>王維</strong>（公元 701–761），字摩詰，祖籍太原祁州（今山西省祁縣），後遷居蒲州（今山西省永濟）。年青時有才名，二十多歲中進士後開始當官；曾在終南山和輞川（今陝西省藍田縣南）購置別墅，閒時前往居住。他在繪畫、音樂、詩歌等方面都有很高造詣，山水田園詩成就尤其突出。信奉佛教，詩作常蘊禪趣，因而有「<strong>詩佛</strong>」之稱。蘇軾讚其「詩中有畫，畫中有詩」。</div>
+  </div>
+
+  <div class="card">
+    <h3>記住三個關鍵</h3>
+    <div class="grid3" style="margin-top:10px">
+      <article class="story">
+        <h4>① 時地・空山</h4>
+        <dl>
+          <dt>時地</dt><dd>新雨後 × 晚來秋 × 山居（輞川）。</dd>
+          <dt>氣象</dt><dd>空山清新疏淡，雨後涼意。</dd>
+        </dl>
+        <p class="baihua"><strong>白話：</strong>首聯只用十個字，就點明季節（秋）、時間（傍晚）和環境（空山剛下過雨）。讀來仿佛能呼吸到雨後清爽濕潤、略帶涼意的空氣——這就是全詩清幽明淨的底色。題目「山居秋暝」四字，其實已被首聯輕輕拆開寫出。</p>
+      </article>
+      <article class="story">
+        <h4>② 靜動・聲色</h4>
+        <dl>
+          <dt>靜景</dt><dd>頷聯：明月松間照，清泉石上流（視聽）。</dd>
+          <dt>動景</dt><dd>頸聯：竹喧歸浣女，蓮動下漁舟（先聞後見／先見後知）。</dd>
+        </dl>
+        <p class="baihua"><strong>白話：</strong>頷聯像一幅清朗的山水畫：天上月照松林，地下清泉流石，畫面完整又爽淨。頸聯轉寫人事動態——先聽到竹林喧鬧，才辨出是洗衣女歸來；先看見蓮葉搖動，才知道漁舟順流而下。靜中有動、聲色交融，山村便活了起來，也不至於過於冷清。</p>
+      </article>
+      <article class="story">
+        <h4>③ 反用・可留</h4>
+        <dl>
+          <dt>典故</dt><dd>反用《楚辭·招隱士》：原勸「歸來」，此謂「可留」。</dd>
+          <dt>情志</dt><dd>秋色仍美；嚮往隱逸，厭棄官場。</dd>
+        </dl>
+        <p class="baihua"><strong>白話：</strong>《招隱士》說山中寂寞可怕，叫王孫趕快回家；王維卻反過來說：任憑春天芳草凋謝，秋天景色依然很美，隱士自然可以留在山中。把山間秋夜寫得如此優美，正反映他對官場的厭倦與對隱居生活的嚮往——這也是尾聯的點睛。</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>溫習口訣</h3>
+    <p>空山新雨晚來秋，明月松間清泉流；竹喧浣女蓮動舟，春芳歇盡王孫留；詩中有畫五言律，動靜聲色反典故；詩佛摩詰輞川居，山居秋暝要記清。</p>
+  </div>
+</section>
+
+<!-- ========== 2 全文 ========== -->
+<section class="sec" id="quanwen">
+  <h2>二、全文</h2>
+  <p class="muted">王維《山居秋暝》　｜　文本依教育局「指定文言經典學習材料」參考版本</p>
+  <div class="card classic">
+    <div class="poem-title">山居秋暝</div>
+    <div class="poem-author">王維</div>
+    <h3>首聯</h3>
+    <p class="poem-line">空山新雨後，天氣晚來秋。</p>
+    <h3>頷聯</h3>
+    <p class="poem-line">明月松間照，清泉石上流。</p>
+    <h3>頸聯</h3>
+    <p class="poem-line">竹喧歸浣女，蓮動下漁舟。</p>
+    <h3>尾聯</h3>
+    <p class="poem-line">隨意春芳歇，王孫自可留。</p>
+    <p class="attr">出處：王維《山居秋暝》；文本依教育局「指定文言經典學習材料」參考版本（ks4_16a_text.pdf）。註：以上僅就坊間所見資料，提供一個參考版本；教師亦可參考、使用其他版本。</p>
+  </div>
+</section>
+
+<!-- ========== 3 語譯 ========== -->
+<section class="sec" id="yuyi">
+  <div class="sec-head-row">
+    <h2>三、語譯</h2>
+    <button type="button" class="btn-toggle" id="yuyiToggle" aria-controls="yuyiBody" aria-expanded="true">隱藏語譯</button>
+  </div>
+  <div id="yuyiBody">
+  <p class="note">以下語譯供自學參考，考試請以課文原文為準。</p>
+  <div class="card yuyi">
+    <h3>首聯</h3>
+    <p>空曠的山中剛下過一場雨，到了傍晚，天氣已透着秋涼。</p>
+    <h3>頷聯</h3>
+    <p>明月在松林間照耀，清澈的泉水在山石上潺潺流過。</p>
+    <h3>頸聯</h3>
+    <p>竹林傳來喧鬧聲，原來是洗衣的女子歸來；蓮葉搖動起來，原來是漁船從上流駛下。</p>
+    <h3>尾聯</h3>
+    <p>任憑春天的花草自然凋謝，秋色依然很美，隱士自然可以留在山中。</p>
+  </div>
+  </div>
+</section>
+
+<!-- ========== 4 重點字詞 ========== -->
+<section class="sec" id="zici">
+  <h2>四、重點字詞</h2>
+  <p class="muted">以下重點詞語宜連同課文語境記誦。（注釋參考教育局材料）</p>
+  <div class="card vocab">
+    <div class="vocab-item"><b>暝</b><span>黃昏時候。○粵音「名」[ming4]。詩題「秋暝」即秋天的傍晚。</span></div>
+    <div class="vocab-item"><b>空山</b><span>空曠清幽的山中。寫雨後山間疏淡空靈，並非了無一人的死寂（下文仍有浣女、漁舟）。</span></div>
+    <div class="vocab-item"><b>竹喧</b><span>竹林中的喧鬧聲。「竹喧歸浣女」——先聞喧聲，再知是洗衣女歸來。</span></div>
+    <div class="vocab-item"><b>浣女</b><span>洗衣女。浣：洗濯。</span></div>
+    <div class="vocab-item"><b>蓮動下漁舟</b><span>蓮葉搖動，原來是漁船順流而下。先見「蓮動」，後知「漁舟」。</span></div>
+    <div class="vocab-item"><b>隨意</b><span>任憑；自然而然地。「隨意春芳歇」——任憑春天的芳草凋謝。</span></div>
+    <div class="vocab-item"><b>歇</b><span>凋謝、消歇。○粵音「挈」[hit3]。「春芳歇」——春天的花草凋謝。</span></div>
+    <div class="vocab-item"><b>王孫</b><span>原指貴族子弟，這裏指隱士。「王孫自可留」——隱士自可留在山中。</span></div>
+    <div class="vocab-item"><b>反用典故</b><span>《楚辭·招隱士》原謂山中不可久留、招王孫歸來；本詩反用其意，謂秋色仍美、王孫可留。反映嚮往隱逸、厭倦官場。</span></div>
+  </div>
+</section>
+
+<!-- ========== 5 章法／寫作手法 ========== -->
+<section class="sec" id="zhangfa">
+  <h2>五、章法／寫作手法</h2>
+  <div class="card struct">
+    <h3>1. 五言律詩・四聯脈絡</h3>
+    <p>全詩四十字，屬<strong>五言律詩</strong>。首聯點時地；頷聯寫靜景（詩中有畫）；頸聯寫動景（人事）；尾聯反用典故，點明可留山中的隱逸情志。頷聯、頸聯對仗。</p>
+    <h3>2. 主要寫作手法</h3>
+    <ul>
+      <li><strong>詩中有畫</strong>：頷聯以月、松、泉、石構圖，清朗爽淨，蘇軾所謂「詩中有畫」。</li>
+      <li><strong>感官描寫</strong>：視覺（月照、蓮動）、聽覺（泉響、竹喧）交織。</li>
+      <li><strong>動靜結合／以動寫靜</strong>：頷聯偏靜，頸聯人事動態映襯；泉流、竹喧、蓮動使靜境不至於冷清平淡。</li>
+      <li><strong>聲色交融</strong>：有聲有色，猶如山村抒情小夜曲。</li>
+      <li><strong>感知順序構句</strong>：頸聯先聞後見、先見後知，切合認知過程，曲折有致。</li>
+      <li><strong>反用典故</strong>：反用《楚辭·招隱士》，由「不可久留」翻為「自可留」，表達隱逸志趣。</li>
+    </ul>
+    <h3>3. 情志</h3>
+    <p>把山間秋夜寫得優美明淨，實際上反映作者對官場生活的厭倦與對隱居生活的嚮往；尾聯卒章顯志。</p>
+    <h3>4. 結構示意</h3>
+    <p>首聯：空山・新雨・晚秋 → 頷聯：明月松間／清泉石上（靜・畫） → 頸聯：竹喧浣女／蓮動漁舟（動・聲色） → 尾聯：春芳歇・王孫可留（反用・隱逸）。</p>
+  </div>
+</section>
+
+<!-- ========== 6 自測 ========== -->
+<section class="sec" id="zice">
+  <h2>六、自測</h2>
+  <p class="muted">題目為校本自測（內容理解／字詞解釋／寫作手法各 15 題，合共 45 題）。可先作答；交卷前請填學生資料。</p>
+
+  <div class="card" id="studentCard">
+    <h3>學生資料（交卷必填）</h3>
+    <div class="student-form">
+      <div>
+        <label class="field" for="cls">班別</label>
+        <input class="field" id="cls" name="cls" placeholder="例：4A" maxlength="4" autocomplete="off" required>
+      </div>
+      <div>
+        <label class="field" for="sid">學號</label>
+        <input class="field" id="sid" name="sid" placeholder="例：01" maxlength="4" autocomplete="off" required>
+      </div>
+      <div>
+        <label class="field" for="sname">姓名</label>
+        <input class="field" id="sname" name="sname" placeholder="請輸入姓名" maxlength="20" autocomplete="name" required>
+      </div>
+    </div>
+    <p class="muted" style="margin:8px 0 0">班別可用如 4A、5C、6D；學號請填兩位數字（如 01）。</p>
+  </div>
+
+  <div class="overall" id="overallBox">
+    <div class="prog-row"><strong>整體進度</strong><span id="overallText">0 / 45 題　總分 0</span></div>
+    <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="45" aria-valuenow="0" id="overallBar"><div id="overallFill"></div></div>
+    <div class="prog-row" style="margin-top:8px;font-size:.9rem">
+      <span>內容理解：<b id="scContent">0</b>/15</span>
+      <span>字詞解釋：<b id="scVocab">0</b>/15</span>
+      <span>寫作手法：<b id="scRhet">0</b>/15</span>
+    </div>
+  </div>
+
+  <div class="tabs" role="tablist" aria-label="練習部分">
+    <button type="button" role="tab" id="tab-content" aria-selected="true" aria-controls="panel-quiz" data-sec="content">內容理解（15）</button>
+    <button type="button" role="tab" id="tab-vocab" aria-selected="false" aria-controls="panel-quiz" data-sec="vocab">字詞解釋（15）</button>
+    <button type="button" role="tab" id="tab-rhet" aria-selected="false" aria-controls="panel-quiz" data-sec="rhetorical">寫作手法（15）</button>
+  </div>
+
+  <div class="card" id="panel-quiz" role="tabpanel">
+    <div class="prog-row"><span id="secProgText">第 1 / 15 題</span><span id="secScoreText">本節答對：0</span></div>
+    <div class="bar" id="secBar" role="progressbar" aria-valuemin="0" aria-valuemax="15" aria-valuenow="0"><div id="secFill"></div></div>
+    <form id="qform" onsubmit="return false" style="margin-top:12px">
+      <fieldset style="border:0;margin:0;padding:0">
+        <legend class="stem" id="stem"></legend>
+        <div id="opts"></div>
+      </fieldset>
+      <div id="fb" class="fb" hidden></div>
+      <button type="button" class="btn" id="checkBtn" disabled>檢查答案</button>
+      <div class="btn-row">
+        <button type="button" class="btn sec" id="nextBtn" hidden>下一題</button>
+        <button type="button" class="btn ok" id="secDoneBtn" hidden>完成本節</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="card" id="secResult" hidden>
+    <h3 id="secResultTitle">本節完成</h3>
+    <p class="big" id="secFinal"></p>
+    <p id="secFinalMsg" class="muted" style="text-align:center"></p>
+    <div class="btn-row">
+      <button type="button" class="btn sec" id="retrySecBtn">重做本節</button>
+      <button type="button" class="btn" id="goNextSecBtn">下一節</button>
+    </div>
+    <button type="button" class="btn warn" id="submitEarlyBtn" style="margin-top:10px" hidden>交卷（已完成全部）</button>
+    <h3>答題回顧</h3>
+    <div id="secReview"></div>
+  </div>
+
+  <div class="card" id="finalResult" hidden>
+    <h3>全部完成・交卷</h3>
+    <p class="big" id="finalScore"></p>
+    <p id="finalDetail" style="text-align:center"></p>
+    <p id="submitMsg" class="note" hidden></p>
+    <div class="btn-row">
+      <button type="button" class="btn ok" id="submitBtn">交卷至老師試算表</button>
+      <button type="button" class="btn sec" id="retryAllBtn">全部重做</button>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 7 影片 ========== -->
+<section class="sec" id="shipin">
+  <h2>七、影片｜寶寶老師陪你快速溫範文</h2>
+  <div class="card">
+    <p><a id="videoTitleLink" href="#" target="_blank" rel="noopener">寶寶老師陪你快速溫範文｜《山居秋暝》</a></p>
+    <div id="videoArea"></div>
+  </div>
+</section>
+
+</main>
+<footer class="footer">漢華中學中國語文科　｜　《山居秋暝》範文導讀　｜　供課堂投影及學生自學</footer>
+
+<script>
+(function () {
+"use strict";
+
+/* ===== 設定：預覽階段 GAS 留空；影片 ID 已填 ===== */
+const GAS_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbw_52HWPuLqwvarY_2OZhODZ8Ijg-2citNTiIDaTkRXAhAvus5IM1sTfRZUsqvOuAAYPQ/exec";
+const YOUTUBE_ID = "u8qOBqqJ3z0";
+
+/* ===== 題庫：校本自測；o[0] 為正確答案 ===== */
+var Q_CONTENT = [{"s":"《山居秋暝》的作者是：","o":["王維","李白","杜甫","孟浩然"],"e":"教育局指定篇章：王維《山居秋暝》。"},{"s":"王維的字是：","o":["摩詰","太白","子美","浩然"],"e":"王維字摩詰；名字取自《維摩詰經》。"},{"s":"王維因詩作常蘊禪趣，後世稱他為：","o":["詩佛","詩仙","詩聖","詩鬼"],"e":"王維信奉佛教，詩作常蘊禪趣，有「詩佛」之稱。"},{"s":"「山居」在本詩背景中主要指：","o":["王維的輞川別墅（山中居所）","皇宮別館","邊塞軍營","城中酒樓"],"e":"這首詩是王維居於輞川時所寫，「山居」即輞川別墅。"},{"s":"詩題「秋暝」的「暝」意思是：","o":["黃昏時候","深夜子時","清晨破曉","正午日中"],"e":"教育局注：暝＝黃昏時候。"},{"s":"本詩描寫的時地氣氛最接近：","o":["秋天傍晚雨後的山村","春日清晨的鬧市","盛夏正午的江邊","冬夜風雪的邊塞"],"e":"背景：秋天傍晚時候山村的秀美景色。首聯「新雨後」「晚來秋」點明。"},{"s":"首聯「空山新雨後，天氣晚來秋」主要作用是：","o":["點出季節、時間與環境，寫山中秋色清新疏淡","詳細描寫人物外貌","議論官場是非","交代寫作年月與贈答對象"],"e":"首聯平淡自然，點出季節、時間、環境。"},{"s":"頷聯「明月松間照，清泉石上流」主要描寫：","o":["山中夜色：月照松林、清泉流石的靜景","浣女洗衣的熱鬧","漁舟捕魚的場景","春天芳草茂盛"],"e":"頷聯概括描繪山中夜色，視覺與聽覺兼備。"},{"s":"「明月松間照」的構圖特點是：","o":["從天上寫，以月與松構成畫面背景","從水底仰望","純寫人物對話","只寫聲音不寫形色"],"e":"賞析：從天上寫，通過月和松的關係畫出背景。"},{"s":"「清泉石上流」除視覺外，還暗示：","o":["泉水流過石縫激盪出的清響（聽覺）","市集叫賣聲","戰鼓聲","鐘樓報時"],"e":"泉水流過白石，反映清澈，並有清響。"},{"s":"頸聯「竹喧歸浣女」的感知順序是：","o":["先聞竹林喧鬧，再辨知是洗衣女歸來","先見人影，再完全無聲","先見漁舟，再聞竹聲","先議論，再寫景"],"e":"從聽覺落筆：聞聲而後見人。"},{"s":"「蓮動下漁舟」的感知順序是：","o":["先見蓮葉搖動，再知是漁舟從上流下來","先聞漁歌，再完全靜止","先寫月色，再寫松林","先寫春芳，再寫王孫"],"e":"從視覺落筆：先見蓮動，後知漁舟。"},{"s":"尾聯「隨意春芳歇，王孫自可留」表達的主要情志是：","o":["秋色仍美，隱士可留山中；嚮往隱逸、厭棄官場","勸人趕緊回朝做官","感嘆春光不再、人生無常而絕望","諷刺浣女與漁夫"],"e":"反映對官場厭倦與對隱居生活的嚮往；反用《招隱士》之意。"},{"s":"「王孫自可留」中的「王孫」在本詩指：","o":["隱士（亦可自況）","皇帝本人","外國使者","市井商人"],"e":"教育局注：王孫原指貴族子弟，這裏指隱士。"},{"s":"本詩主旨最接近：","o":["寫秋晚雨後山村清幽明淨之境，寄託恬淡隱逸之志","純粹記載氣象觀測數據","為戰爭紀功","諷刺農家懶惰"],"e":"山水之情與恬淡生活意趣；反用典故表隱逸嚮往。"}];
+var Q_VOCAB = [{"s":"「暝」的意思是：","o":["黃昏時候","天明","下雨","月圓"],"e":"教育局注：暝＝黃昏時候。粵[名] ming4。"},{"s":"「竹喧」的意思是：","o":["竹林中的喧鬧聲","竹子枯萎","竹製樂器走調","竹筏翻覆"],"e":"教育局注：竹喧＝竹林中的喧鬧聲。"},{"s":"「浣女」的意思是：","o":["洗衣女","繡花女","賣茶女","宮女"],"e":"教育局注：浣女＝洗衣女。"},{"s":"「隨意春芳歇」中「隨意」較接近：","o":["任憑／自然而然地","隨隨便便、不認真","跟隨別人的意思","臨時決定"],"e":"賞析：「隨意」即自然而然地／任憑。"},{"s":"「春芳歇」中「歇」的意思是：","o":["凋謝、消歇","休息睡覺","停止營業","打哈欠"],"e":"春芳歇＝春天的花草凋謝。"},{"s":"「王孫」在本詩注釋中指：","o":["隱士（原指貴族子弟）","植物名稱","樂器","官職品級"],"e":"原指貴族子弟，這裏指隱士。"},{"s":"「空山」在詩中主要營造的感覺是：","o":["山中空曠清幽（非了無人煙的死寂）","完全沒有任何生物","山崩地裂","城市喧鬧"],"e":"空山寫清幽空曠；下文仍有浣女、漁舟，可見並非死寂。"},{"s":"「新雨後」的「新」強調：","o":["剛剛下過雨，景物被洗滌一新","新年第一場雨","人工造雨","雨量創歷史新高"],"e":"新雨洗滌，突出清新。"},{"s":"「晚來秋」點明：","o":["時值傍晚，又正是秋天","秋天已經結束","半夜子時","春分時節"],"e":"晚＝傍晚；秋＝秋季。"},{"s":"「清泉石上流」的「清」主要寫：","o":["泉水清澈","泉水混濁","泉水冰凍","泉水乾涸"],"e":"清澈的泉水流過白石。"},{"s":"尾聯反用的典故出自：","o":["《楚辭·招隱士》","《論語》","《孟子》","《詩經·關雎》"],"e":"反用「王孫兮歸來，山中兮不可以久留」等句之意。"},{"s":"《招隱士》原典大意是：","o":["山中不可久留，招隱士歸來","勸人永遠住在山中不歸","歌頌戰爭勝利","描寫洞庭湖大觀"],"e":"原意寫山裏寂寞可怕，不能久留，要招隱士回家。"},{"s":"王維反用《招隱士》之意，是說：","o":["秋色仍美，王孫（隱士）自可留在山中","必須立刻回京","山中絕對不可停留","春草已生故必須歸來"],"e":"任憑春芳凋謝，秋色仍美，故可留。"},{"s":"「歸浣女」的「歸」與詩中哪一語相呼應？","o":["晚來秋（傍晚時分晚歸）","春芳歇","王孫","新雨"],"e":"賞析：「歸」與「晚來秋」相呼應，浣女晚歸正是山村特徵。"},{"s":"「下漁舟」的「下」在句中意思較接近：","o":["（漁舟）順流而下／從上流下來","下令出發","降下雨雪","低下頭"],"e":"漁舟從上流下來，帶動蓮葉搖動。"}];
+var Q_RHET = [{"s":"《山居秋暝》的詩體是：","o":["五言律詩","七言絕句","樂府歌行","詞（長調）"],"e":"全詩四十字，五言八句，屬五言律詩。"},{"s":"五言律詩中，必須對仗的一般是：","o":["頷聯與頸聯","只有首聯","只有尾聯","四聯皆不可對仗"],"e":"律詩頷、頸兩聯講究對仗。"},{"s":"「明月松間照，清泉石上流」在律詩結構中屬於：","o":["頷聯","首聯","頸聯","尾聯"],"e":"第二聯為頷聯。"},{"s":"「竹喧歸浣女，蓮動下漁舟」在律詩結構中屬於：","o":["頸聯","首聯","頷聯","尾聯"],"e":"第三聯為頸聯。"},{"s":"蘇軾評王維「詩中有畫」在本詩中最明顯見於：","o":["頷聯以簡淨構圖寫月松清泉，如畫境","尾聯純議論無形象","只有典故沒有景物","完全不寫色彩與線條"],"e":"頷聯構圖取景見畫家功力；蘇軾有「詩中有畫」之讚。"},{"s":"首聯在章法上的作用是：","o":["破題，點時地與環境氣氛","卒章顯志","倒敘童年","插入對話"],"e":"點出季節、時間、環境。"},{"s":"頷聯與頸聯在寫景上的主要對比是：","o":["靜景（視聽清幽）↔ 動景（人事熱鬧）","全寫戰爭","全寫夢境","只有味覺描寫"],"e":"頷聯偏靜；頸聯轉動態描寫。"},{"s":"頸聯「竹喧歸浣女」主要先從哪一感官落筆？","o":["聽覺（先聞喧聲）","味覺","嗅覺","純抽象議論"],"e":"從聽覺落筆，聞聲而見人。"},{"s":"「蓮動下漁舟」主要先從哪一感官落筆？","o":["視覺（先見蓮動）","聽覺","味覺","觸覺"],"e":"從視覺落筆，先見蓮動後知漁舟。"},{"s":"頸聯句式「先聲／先動，後點人事」的效果是：","o":["切合感知順序，曲折有致，並融入審美觀照","使意思含糊不清","破壞對仗","取消形象感"],"e":"按感知事物順序構句，表達更曲折有致。"},{"s":"若沒有頸聯的動景，全詩可能顯得：","o":["過於冷清平淡；有動景則聲色交融、動態多樣","更加熱鬧喧騰","變成議論文","變成悼亡詩"],"e":"賞析：熱鬧動景映襯，全詩在色彩與聲響交織中顯動態美。"},{"s":"尾聯反用《楚辭·招隱士》屬於：","o":["反用典故","直譯典故一字不改","完全無關的引用","刪除典故"],"e":"原典勸歸，此處說可留，反用其意。"},{"s":"本詩整體意境風格最接近：","o":["空山秋夜清幽明淨，有靜有動、有聲有色","雄奇豪放如大江東去","淒苦悲憤如貶謫血淚","華麗堆砌宮體"],"e":"胡應麟稱王維詩「清而秀」；全詩清幽明淨。"},{"s":"「以動寫靜／動靜結合」在本詩中的例子是：","o":["清泉流動、竹喧蓮動襯托山中清幽","全詩無一動態","只用數字對仗","只用否定句"],"e":"泉流、竹喧、蓮動等動景，反襯／豐富靜境。"},{"s":"本詩藝術手法組合最貼切的是：","o":["感官描寫＋動靜結合＋聲色交融＋反用典故","只有邏輯三段論","純書信體","戲劇對話體"],"e":"教育局重點：感官描寫、以動寫靜、反用典故；並見詩中有畫。"}];
+
+var SECTIONS = {
+  content: { key: 'content', title: '內容理解', Q: Q_CONTENT },
+  vocab: { key: 'vocab', title: '字詞解釋', Q: Q_VOCAB },
+  rhetorical: { key: 'rhetorical', title: '寫作手法', Q: Q_RHET }
+};
+var SEC_ORDER = ['content', 'vocab', 'rhetorical'];
+var MAX_TOTAL = 45;
+var DRAFT_KEY = 'shanjuqiumin_daodu_draft';
+
+function shuffle(a) {
+  a = a.slice();
+  for (var i = a.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var t = a[i]; a[i] = a[j]; a[j] = t;
+  }
+  return a;
+}
+function $(id) { return document.getElementById(id); }
+
+var state = {};
+SEC_ORDER.forEach(function (k) {
+  state[k] = { order: null, cur: 0, answers: [], finished: false, score: 0 };
+});
+var currentSec = 'content';
+
+function studentInfo() {
+  return {
+    class: ($('cls').value || '').trim().toUpperCase(),
+    studentId: ($('sid').value || '').trim(),
+    name: ($('sname').value || '').trim()
+  };
+}
+function requireStudent() {
+  var s = studentInfo();
+  if (!s.class || !s.studentId || !s.name) {
+    alert('請先填寫班別、學號、姓名，再開始或交卷。');
+    $('studentCard').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    $('cls').focus();
+    return null;
+  }
+  return s;
+}
+
+function prepareOrder(secKey) {
+  var Q = SECTIONS[secKey].Q;
+  return Q.map(function (q) {
+    return { s: q.s, e: q.e, ans: q.o[0], o: shuffle(q.o) };
+  });
+}
+
+function startSection(secKey, force) {
+  currentSec = secKey;
+  var st = state[secKey];
+  if (force || !st.order) {
+    st.order = prepareOrder(secKey);
+    st.cur = 0;
+    st.answers = [];
+    st.finished = false;
+    st.score = 0;
+  }
+  document.querySelectorAll('.tabs button').forEach(function (b) {
+    var on = b.getAttribute('data-sec') === secKey;
+    b.setAttribute('aria-selected', on ? 'true' : 'false');
+    b.classList.toggle('active', on);
+  });
+  $('finalResult').hidden = true;
+  if (st.finished) {
+    $('panel-quiz').hidden = true;
+    showSecResult(secKey);
+  } else {
+    $('secResult').hidden = true;
+    $('panel-quiz').hidden = false;
+    showQuestion();
+  }
+  updateOverall();
+}
+
+function setSecScore(secKey) {
+  var st = state[secKey];
+  var s = 0;
+  for (var i = 0; i < st.answers.length; i++) {
+    if (st.answers[i] && st.answers[i].ok) s++;
+  }
+  st.score = s;
+  return s;
+}
+
+function updateOverall() {
+  var done = 0, totalScore = 0;
+  SEC_ORDER.forEach(function (k) {
+    var st = state[k];
+    var answered = st.answers.filter(function (a) { return a; }).length;
+    done += answered;
+    totalScore += setSecScore(k);
+  });
+  $('overallFill').style.width = (done / MAX_TOTAL * 100) + '%';
+  $('overallBar').setAttribute('aria-valuenow', String(done));
+  $('overallText').textContent = done + ' / ' + MAX_TOTAL + ' 題　總分 ' + totalScore;
+  $('scContent').textContent = state.content.score;
+  $('scVocab').textContent = state.vocab.score;
+  $('scRhet').textContent = state.rhetorical.score;
+
+  var allDone = SEC_ORDER.every(function (k) { return state[k].finished; });
+  if (allDone) {
+    $('submitEarlyBtn').hidden = false;
+    showFinal();
+  }
+}
+
+function showQuestion() {
+  var st = state[currentSec];
+  var q = st.order[st.cur];
+  var N = st.order.length;
+  st._picked = null;
+  st._checked = false;
+  $('stem').textContent = (st.cur + 1) + '. ' + q.s;
+  var box = $('opts');
+  box.innerHTML = '';
+  q.o.forEach(function (t, i) {
+    var l = document.createElement('label');
+    l.className = 'opt';
+    var r = document.createElement('input');
+    r.type = 'radio'; r.name = 'opt'; r.value = String(i);
+    var sp = document.createElement('span');
+    sp.textContent = String.fromCharCode(65 + i) + '. ' + t;
+    l.appendChild(r); l.appendChild(sp);
+    r.addEventListener('change', function () {
+      if (st._checked) return;
+      st._picked = i;
+      Array.prototype.forEach.call(box.children, function (c) { c.classList.remove('sel'); });
+      l.classList.add('sel');
+      $('checkBtn').disabled = false;
+    });
+    box.appendChild(l);
+  });
+  $('fb').hidden = true;
+  $('checkBtn').hidden = false;
+  $('checkBtn').disabled = true;
+  $('nextBtn').hidden = true;
+  $('secDoneBtn').hidden = true;
+  var answered = st.answers.filter(function (a) { return a; }).length;
+  $('secFill').style.width = (answered / N * 100) + '%';
+  $('secBar').setAttribute('aria-valuenow', String(answered));
+  $('secProgText').textContent = '第 ' + (st.cur + 1) + ' / ' + N + ' 題';
+  $('secScoreText').textContent = '本節答對：' + st.score;
+}
+
+function checkAnswer() {
+  var st = state[currentSec];
+  if (st._checked || st._picked === null) return;
+  st._checked = true;
+  $('checkBtn').disabled = true;
+  var q = st.order[st.cur];
+  var ok = q.o[st._picked] === q.ans;
+  st.answers[st.cur] = { ok: ok, pick: q.o[st._picked], ans: q.ans, idx: st.cur };
+  var labs = $('opts').children;
+  for (var i = 0; i < labs.length; i++) {
+    labs[i].querySelector('input').disabled = true;
+    if (q.o[i] === q.ans) labs[i].classList.add('ok');
+    else if (i === st._picked) labs[i].classList.add('bad');
+  }
+  var fb = $('fb');
+  fb.hidden = false;
+  fb.className = 'fb ' + (ok ? 'ok' : 'bad');
+  fb.textContent = (ok ? '✔ 答對了！' : '✘ 答錯了。正確答案：' + q.ans) + '　解說：' + q.e;
+  setSecScore(currentSec);
+  updateOverall();
+  $('secScoreText').textContent = '本節答對：' + st.score;
+  var answered = st.answers.filter(function (a) { return a; }).length;
+  var N = st.order.length;
+  $('secFill').style.width = (answered / N * 100) + '%';
+  $('checkBtn').hidden = true;
+  if (st.cur < N - 1) $('nextBtn').hidden = false;
+  else $('secDoneBtn').hidden = false;
+}
+
+function nextQuestion() {
+  var st = state[currentSec];
+  if (!st._checked) return;
+  if (st.cur < st.order.length - 1) {
+    st.cur++;
+    showQuestion();
+  }
+}
+
+function finishSection() {
+  var st = state[currentSec];
+  if (!st._checked) return;
+  st.finished = true;
+  setSecScore(currentSec);
+  updateOverall();
+  showSecResult(currentSec);
+  saveDraft();
+  if (SEC_ORDER.every(function (k) { return state[k].finished; })) {
+    showFinal();
+  }
+}
+
+function showSecResult(secKey) {
+  var st = state[secKey];
+  var N = SECTIONS[secKey].Q.length;
+  $('panel-quiz').hidden = true;
+  $('secResult').hidden = false;
+  $('secResultTitle').textContent = SECTIONS[secKey].title + '・本節完成';
+  $('secFinal').textContent = '得分：' + st.score + ' / ' + N;
+  var p = st.score / N;
+  $('secFinalMsg').textContent = p >= 0.8 ? '表現出色，繼續保持！' : p >= 0.5 ? '不錯，請重溫答錯的題目。' : '請細閱課文及解說，再試一次。';
+  var rv = $('secReview');
+  rv.innerHTML = '';
+  st.order.forEach(function (q, i) {
+    var a = st.answers[i];
+    if (!a) return;
+    var d = document.createElement('div');
+    d.className = 'rv';
+    var t = document.createElement('div');
+    t.className = 't';
+    t.textContent = (i + 1) + '. ' + q.s;
+    var r = document.createElement('div');
+    r.className = a.ok ? 'c' : 'w';
+    r.textContent = (a.ok ? '✔ 你的答案：' : '✘ 你的答案：') + a.pick + (a.ok ? '' : '｜正確答案：' + q.ans);
+    var e = document.createElement('div');
+    e.className = 'muted';
+    e.textContent = '解說：' + q.e;
+    d.appendChild(t); d.appendChild(r); d.appendChild(e);
+    rv.appendChild(d);
+  });
+  var idx = SEC_ORDER.indexOf(secKey);
+  var nextKey = idx < SEC_ORDER.length - 1 ? SEC_ORDER[idx + 1] : null;
+  $('goNextSecBtn').hidden = !nextKey;
+  $('goNextSecBtn').textContent = nextKey ? '前往「' + SECTIONS[nextKey].title + '」' : '';
+  $('goNextSecBtn').onclick = nextKey ? function () {
+    startSection(nextKey, false);
+    $('zice').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  } : null;
+  $('submitEarlyBtn').hidden = !SEC_ORDER.every(function (k) { return state[k].finished; });
+}
+
+function wrongSummary() {
+  var parts = [];
+  SEC_ORDER.forEach(function (k) {
+    var st = state[k];
+    var wrong = [];
+    st.answers.forEach(function (a, i) {
+      if (a && !a.ok) wrong.push(i + 1);
+    });
+    if (wrong.length) parts.push(SECTIONS[k].title + '錯題:' + wrong.join(','));
+  });
+  return parts.join('；') || '全對';
+}
+
+function buildPayload(stu) {
+  var sc = state.content.score;
+  var sv = state.vocab.score;
+  var sr = state.rhetorical.score;
+  var total = sc + sv + sr;
+  return {
+    timestamp: new Date().toISOString(),
+    class: stu.class,
+    studentId: stu.studentId,
+    name: stu.name,
+    scoreContent: sc,
+    scoreVocab: sv,
+    scoreRhetorical: sr,
+    scoreTotal: total,
+    maxTotal: MAX_TOTAL,
+    percent: Math.round(total / MAX_TOTAL * 1000) / 10,
+    answersSummary: wrongSummary(),
+    userAgent: navigator.userAgent || ''
+  };
+}
+
+function showFinal() {
+  if (!SEC_ORDER.every(function (k) { return state[k].finished; })) return;
+  $('finalResult').hidden = false;
+  var total = state.content.score + state.vocab.score + state.rhetorical.score;
+  $('finalScore').textContent = '總分：' + total + ' / ' + MAX_TOTAL;
+  $('finalDetail').innerHTML =
+    '內容理解 ' + state.content.score + '/15　｜　字詞解釋 ' + state.vocab.score +
+    '/15　｜　寫作手法 ' + state.rhetorical.score + '/15<br>正確率 ' +
+    (Math.round(total / MAX_TOTAL * 1000) / 10) + '%';
+  saveDraft();
+}
+
+function saveDraft() {
+  try {
+    var stu = studentInfo();
+    var draft = {
+      student: stu,
+      scores: {
+        content: state.content.score,
+        vocab: state.vocab.score,
+        rhetorical: state.rhetorical.score
+      },
+      finished: SEC_ORDER.map(function (k) { return { k: k, done: state[k].finished, score: state[k].score }; }),
+      summary: wrongSummary(),
+      savedAt: new Date().toISOString()
+    };
+    localStorage.setItem(DRAFT_KEY, JSON.stringify(draft));
+  } catch (e) {}
+}
+
+function submitToSheet() {
+  var stu = requireStudent();
+  if (!stu) return;
+  if (!SEC_ORDER.every(function (k) { return state[k].finished; })) {
+    alert('請先完成三個部分的全部題目，再交卷。');
+    return;
+  }
+  var payload = buildPayload(stu);
+  saveDraft();
+  var msg = $('submitMsg');
+  msg.hidden = false;
+
+  if (!GAS_WEBAPP_URL) {
+    msg.textContent = '成績已暫存在本機。目前未能上傳至老師試算表，請稍後再試或向老師查詢。';
+    return;
+  }
+  msg.textContent = '正在上傳成績…';
+  $('submitBtn').disabled = true;
+  fetch(GAS_WEBAPP_URL, {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+    body: JSON.stringify(payload)
+  }).then(function () {
+    msg.textContent = '✔ 已送出交卷請求。若老師試算表「交卷紀錄」出現新列，即表示成功。';
+    $('submitBtn').disabled = false;
+  }).catch(function () {
+    msg.textContent = '✘ 上傳失敗，請檢查網絡後再試。本機草稿已保存。';
+    $('submitBtn').disabled = false;
+  });
+}
+
+var yuyiToggle = $('yuyiToggle');
+var yuyiBody = $('yuyiBody');
+if (yuyiToggle && yuyiBody) {
+  yuyiToggle.addEventListener('click', function () {
+    var hide = !yuyiBody.hidden;
+    yuyiBody.hidden = hide;
+    yuyiToggle.setAttribute('aria-expanded', hide ? 'false' : 'true');
+    yuyiToggle.textContent = hide ? '顯示語譯' : '隱藏語譯';
+  });
+}
+
+function renderVideo() {
+  var area = $('videoArea');
+  var link = $('videoTitleLink');
+  var title = '寶寶老師陪你快速溫範文｜《山居秋暝》';
+  if (YOUTUBE_ID) {
+    link.href = 'https://www.youtube.com/watch?v=' + encodeURIComponent(YOUTUBE_ID);
+    area.innerHTML = '<div class="video-wrap"><iframe src="https://www.youtube.com/embed/' +
+      encodeURIComponent(YOUTUBE_ID) + '" title="' + title + '" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe></div>';
+  } else {
+    link.href = '#shipin';
+    link.removeAttribute('target');
+    area.innerHTML = '<div class="video-box"><strong>影片即將上線</strong><span>' + title + '</span></div>';
+  }
+}
+
+document.querySelectorAll('.tabs button').forEach(function (b) {
+  b.addEventListener('click', function () {
+    startSection(b.getAttribute('data-sec'), false);
+  });
+});
+$('checkBtn').addEventListener('click', checkAnswer);
+$('nextBtn').addEventListener('click', nextQuestion);
+$('secDoneBtn').addEventListener('click', finishSection);
+$('retrySecBtn').addEventListener('click', function () {
+  startSection(currentSec, true);
+  $('zice').scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+$('submitBtn').addEventListener('click', submitToSheet);
+$('submitEarlyBtn').addEventListener('click', function () {
+  showFinal();
+  $('finalResult').scrollIntoView({ behavior: 'smooth', block: 'center' });
+});
+$('retryAllBtn').addEventListener('click', function () {
+  if (!confirm('確定全部重做？目前得分將重置。')) return;
+  SEC_ORDER.forEach(function (k) {
+    state[k] = { order: null, cur: 0, answers: [], finished: false, score: 0 };
+  });
+  $('finalResult').hidden = true;
+  startSection('content', true);
+  updateOverall();
+});
+
+try {
+  var d = localStorage.getItem(DRAFT_KEY);
+  if (d) {
+    var draft = JSON.parse(d);
+    if (draft.student) {
+      if (draft.student.class) $('cls').value = draft.student.class;
+      if (draft.student.studentId) $('sid').value = draft.student.studentId;
+      if (draft.student.name) $('sname').value = draft.student.name;
+    }
+  }
+} catch (e) {}
+
+renderVideo();
+updateOverall();
+startSection('content', false);
+
+})();
+</script>
+</body>
+</html>
